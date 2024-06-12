@@ -4,9 +4,11 @@
   "private": true,
   "author": "Josh Comeau <me@joshwcomeau.com>",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "eslint": "^8.49.0",
     "eslint-config-react-app": "^7.0.1",
     "new-component": "5.0.2",
+    "openai": "^4.47.3",
     "parcel": "2.12.0",
     "parcel-reporter-static-files-copy": "1.5.2",
     "prettier": "2.6.2",
@@ -14,7 +16,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-feather": "2.0.10",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "swr": "^2.2.5"
   },
   "scripts": {
     "predev": "rimraf .parcel-cache dist",
@@ -25,5 +28,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "staticFiles": {
     "staticPath": "assets"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
   }
 }
